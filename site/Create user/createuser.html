@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create user</title>
+<script>
+	function checkValid()
+	{
+	id=document.f1.txtid.value.trim();
+		re=/^[G][C][S]\d{5}$/;
+	if(id=="")
+	  {
+	     alert("Userid is required...");
+	     f1.txtid.focus();
+		  return;
+	   }
+		else if(!re.exec(id))
+			{
+				alert("UserId is Invalid!");
+				f1.txtid.value="";
+				f1.txtid.focus();
+				return;
+			}
+		else{
+			alert("Add user completed successfully");
+	}	
+	}
+	
+	</script>
+
+</head>
+
+
+<body>
+<h3 align="center">Create User</h3>
+   <form name = "f1">
+   	<label>User id:</label>
+	<input type="text" name="txtid" required/><br></br>
+	<label>Full Name:</label>
+	<input type="text" name="txtname" /><br></br>
+	<lable>User name:</lable>
+	<input type="text" name="txtuser" /><br></br>
+	<lable>Password:</lable>
+	<input type="password" name="txtpass" /><br></br>
+	<lable>Address:</lable>
+	<input type="text area" name="txtadd" /><br></br>
+	<lable>Email:</lable>
+	<input type="text" name="txtemail" /><br></br>
+	<input type="Submit" value="Accept" onclick="checkValid()"/>
+	<input type= "reset" value="Reset"/>
+	
+   </form>
+    
+	
+	
+	
+</fieldset>
+
+
+</body>
+</html>
