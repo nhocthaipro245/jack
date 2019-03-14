@@ -1,0 +1,114 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Online Shopee</title>
+	<h1 align="Center"style="background-color: green">Online Shopee</h1>
+	
+	<link rel="stylesheet" href ="shopee.css"/>
+	
+	<script>
+	Function checklogin()
+	{
+		if(f1.txtname.value=="FPT")
+			{
+				if(f1.txtpass.value=="GreenWich")
+					{
+						alert("Login Success");
+						location="ProductPage.html";
+					}
+				else
+		{
+			alert("Fail Name");
+		}
+			}
+		else
+			{
+				alert("Invalid UserName");
+			}
+	}
+		
+	
+		
+	</script>
+
+
+</head>
+
+<body>
+<div name="top">
+<a href="Shoppee.html">Home</a>
+<a href="Products.html">Products</a>
+<a href="Shoppee.html" target="_blank">Register</a>
+	</div>
+<h1 align="center" style="color: forestgreen ">MEMBER INFORMATION</h1>
+
+
+
+
+ <form name ="f1">
+ <table border="1"  align="left">
+ <tr>
+ 	<td><label>Full Name:</label></td>
+	 <td><input type="text" name="txtname"/></td>
+</tr>
+<tr>
+	<td><lable>Gender:</label></td>
+	<td>
+	<input type="radio" name="gender" value="male" id="male"> Male 
+	<input type="radio" name="gender" value="female" id="female"> Female <br></br>
+	</td>
+		
+</tr>
+	<td><lable>Hoppies:</label></td>
+	<td>
+	<div class="checkbox">
+    <input id="Shopee" type="checkbox" name="Shopee" value="Shopee">
+    
+		<label for="Shopee"> Shopee</label>
+    <input id="Eating out" type="checkbox" name="Eating out" value="Eating out">
+		<label for="Eating out"> Eating out</label>
+	 <input id="Sporting"type="checkbox" name="Sporting" value="Sporting">
+		<label for="Sproting"> Sporting</label>
+</div>
+   </td>
+   <tr>
+   	<td><lable>Date of Birth:</lable></td>
+	<td><input type="date" name="txtdate" /><br></br></td>
+   </tr>
+	<tr>
+	<td><lable>Address:</lable></td>
+	<td><input type="text area" name="txtadd" /><br></br></td>
+	</tr>
+	<tr>
+	<td><lable>Email:</lable> </td>
+	<td><input type="text" name="txtemail" /><br></br></td>
+	</tr>
+	<tr>
+	<td><label>Phone Number:</label></td>
+    <td><input type="text" name="txtphone" /><br></br></td>
+	</tr>
+   <tr>
+   <td><label>City:</label></td>
+   	<td><select name="City">
+   		<option>SaiGon</option>
+   		<option>Hue</option>
+   		<option>HaNoi</option>
+		<option>ĐaNang</option>
+   	</select>
+   	</td>
+   </tr>
+    <tr>
+    <td>
+    <input type="button" value="Accept" onclick="checkValid()"/>
+	<input type= "reset" value="Reset"/>
+   </td>
+    </tr>
+</table>
+</form>
+ 
+	
+	
+ 	
+ 
+</body>
+</html>
