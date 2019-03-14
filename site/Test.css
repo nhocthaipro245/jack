@@ -1,0 +1,37 @@
+header {border: solid 1px; width: auto; height: 100px; text-shadow: 0px 0.1px; 
+	background-image: url(../Image/2.jpg); font-size: 25px ; 
+	padding: 25px; }
+footer {border: solid 1px; width: auto; height: 120px; 
+	background-image: url(../Image/3.jpg); list-style-type: square;  }
+	#contact {font-size: 20px; text-shadow: 0.3em 0.3em #4D82CA }
+
+#brand {text-decoration:none; color: black; text-shadow: .2em .2em gray; 
+	font-size:25px;  }
+#LR  {text-align: right; font-size: 20px; background-color: #46E7F5; 
+	color: black;padding-right: 10.5%}
+#Login:hover {color: #F0F30D} 
+#Login:active {color: red }
+#Re:hover {color: #F0F30D} 
+#Re:active {color: red }
+
+#menu  {padding: 10px;  font-size: 20px;
+border-style:solid none;margin-bottom:10px; text-align: center;} 
+#a {padding: 50px}
+#b {padding: 50px}
+#c {padding: 50px}
+#d {padding: 50px}
+#e {padding: 50px}
+#news {background-image: url(../Image/4.jpg); 
+color: white; border: 1px solid; height: 100px; padding: 30px; font-size: 70px}
+}
+#main {border: 1px solid;}
+#t02 {float: right;width: 10%;position: fixed;top: 0;left: 0}
+#t01 {float: left;width: 10%;position: fixed;top: 0;right: 0 }
+
+#main {border: 1px solid; padding: 10px; margin: 10px 30px 10px 30px;width: 50%}
+body {}
+#p1 {padding: 10px; border: 1px solid black}
+#c1:link { text-decoration: none;  }
+#LO {background-image: url(../Image/5.jpg); 
+color: white; border: 1px solid; height: 100px; padding: 30px; font-size: 70px}
+}
