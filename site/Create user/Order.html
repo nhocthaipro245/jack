@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Order</title>
+</head>
+<link rel="stylesheet" href="order.css"/>
+<script>
+	function Checkprice()
+	{
+		var n = f1.Product.selectedIndex;
+		var x 
+		if(n==1)
+			{
+				f1.txtprice.value= "20000000";
+			}
+		else if(n==2)
+		{
+			f1.txtprice.value= "30000000";
+		}
+		else if(n==3)
+			{
+				f1.txtprice.value="27000000";
+			}
+		
+	}
+	function checktotal()
+	{
+		x = f1.txtprice.value * f1.txtquantity.value;
+		document.getElementById("mount").innerHTML= x;
+		
+		
+	}
+		//<input type="text" name="txtmount" id="mount" onChange="checktotal"
+		//f1.txtprice.value * f1.txtquantity.value;
+	
+	
+	</script>
+
+
+<body>
+<h1 align="center">Order Form</h1>
+<form name ="f1">
+	<table border=1 cellspacing="0" cellpadding=2>
+	<tr>
+		<td><label>Customer name:</label></td>
+		<td><input type="text" name="txtname" required </td> 
+	</tr>
+	<tr>
+	
+		<td><label>Adress:</label></td>
+		<td><input type="text" name="txtadd"</td>
+	</tr>
+	<tr>
+		<td><label>Phone Number:</label></td>
+		<td><input type="number" name="txtphone" required</td>
+	</tr>
+	<tr>
+		<td><label>Email:</label></td>
+		<td><input type="email" name="txtmail" required</td>
+	</tr>
+	<tr>
+		<td><label>Product:</label></td>
+		<td><select name="Product" onChange="Checkprice()">
+   		<option>Select Product</option>
+   		<option>Wave Alpha</option>
+   		<option>Super Dream</option>
+   		<option>Future</option>
+	</tr>
+	<tr>
+		<td><label>Unit Price:</label></td>
+		<td><input type="text" name="txtprice"</td>
+	</tr>
+	<tr>
+		<td><label>Quantity:</label></td>
+		<td><input type="text" name="txtquantity" required >
+		</td>
+	</tr>
+	<tr>
+		<td><label>Amount::</label></td> 
+		<td> <p id= "mount"></p></td>
+	</tr>
+	<tr>
+		<td>
+	<input type="button" value="Accept" onclick="checkValid()"/>
+	<input type= "reset" value="Reset"/>
+		</td>
+	</tr>
+	
+	
+	</table>
+</form>
+</body>
+</html>
